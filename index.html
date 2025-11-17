@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>FULLSCREEN</title>
+<title>Fullscreen Wrapper</title>
 <style>
-body { margin: 0; overflow: hidden; }
-#game { width: 100vw; height: 90vh; border: none; }
-button { width: 100vw; height: 10vh; font-size: 24px; }
+body {
+    margin: 0;
+    overflow: hidden;
+}
+#game {
+    width: 100vw;
+    height: 90vh;
+}
+button {
+    width: 100vw;
+    height: 10vh;
+    font-size: 24px;
+}
 </style>
 </head>
 <body>
 
-<button onclick="goFull()">Fullscreen</button>
+<button onclick="fullscreen()">Fullscreen</button>
 <iframe id="game" src="https://gustavvasasfullscreen.github.io/boxingrandom/"></iframe>
 
 <script>
-function goFull() {
+function fullscreen() {
     document.getElementById("game").requestFullscreen();
 }
 </script>

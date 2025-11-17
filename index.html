@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fullscreen Wrapper</title>
+<style>
+body {
+    margin: 0;
+    overflow: hidden;
+}
+#game {
+    width: 100vw;
+    height: 90vh;
+}
+button {
+    width: 100vw;
+    height: 10vh;
+    font-size: 24px;
+}
+</style>
+</head>
+<body>
+
+<button onclick="fullscreen()">Fullscreen</button>
+<iframe id="game" src="https://sites.google.com/edu.lomma.se/gustavvasas-pluggsida/boxing-random?authuser=0"></iframe>
+
+<script>
+function fullscreen() {
+    document.getElementById("game").requestFullscreen();
+}
+</script>
+
+</body>
+</html>
